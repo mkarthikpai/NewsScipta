@@ -16,7 +16,7 @@ const Search = () => {
   const [filteredArticles, setFilteredArticles] = useState([]);
 
   // API Key
-  const API_KEY = "7121b697575648978c2e5bf222438dcc";
+  const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
   const handleRefresh = () => {
     window.location.reload();
